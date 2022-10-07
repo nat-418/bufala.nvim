@@ -58,9 +58,9 @@ Currently implemented layouts are:
 
 * row, a "landscape" optimized layout:
   ```
-           | Buffer 2
-  Buffer 1 +--------
-           | Buffer 2
+         Buffer 1
+  ---------+---------
+  Buffer 2 | Buffer 3 
   ```
 
 See also
