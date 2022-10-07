@@ -47,6 +47,8 @@ to use a layout. The layouts work well for cases where you want a more
 fluid, dynamic experience and not really think about where things need
 to go.
 
+Currently implemented layouts are:
+
 * stack, a "portrait" optimized layout:
   ```
            | Buffer 2
