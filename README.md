@@ -3,7 +3,7 @@ bufala.nvim
 
 ![Some tasty bufala](./bufala.jpg)
 
-This is a simple Neovim plugin that makes working with buffers easier.
+Bufala is a simple Neovim plugin that makes working with buffer windows easier.
 It pulls out the "tiling window manager for buffers" concept from my 
 [dbm.nvim](https://github.com/nat-418/dbm.nvim) plugin and refines it,
 shipping only one command:
@@ -13,13 +13,13 @@ shipping only one command:
 There are a few subcommands:
 
 * `{count} cycle` moves through buffers with an optional count.
-* `focus` swaps the current buffer with the first or main buffer.
+* `focus` swaps the current buffer with the first or main buffer window.
 * `split {direction} {target}` opens a new split with an optional
   direction and target. Valid directions are up, down, left, and right.
   If no direction is given, Bufala will either abort or split based on
   the `layout` configured in the `setup` function (see below).
   The target is whatever you would put in a `:buffer {target}` command.
-* `swap` swaps the current buffer with last buffer you were in.
+* `swap` swaps the current buffer window with last buffer window you were in.
 
 Installation
 ------------
@@ -39,8 +39,8 @@ use({
 Configuration
 -------------
 
-Bufala allows for the optional configuration of a default layout for
-splits in the `setup` function. These layouts are clones from suckless'
+Bufala allows for the optional configuration of a default layout for windows
+and splits in the `setup` function. These layouts are clones from suckless'
 [dwm](https://dwm.suckless.org/). If you prefer the manual approach to
 getting everything just right, using sessions, etc. you might not care
 to use a layout. The layouts work well for cases where you want a more
