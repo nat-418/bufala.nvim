@@ -49,14 +49,14 @@ to go.
 
 Currently implemented layouts are:
 
-* stack, a "portrait" optimized layout:
+* `stack`, a "portrait" optimized layout:
   ```
            | Buffer 2
   Buffer 1 +--------
            | Buffer 2
   ```
 
-* row, a "landscape" optimized layout:
+* `row`, a "landscape" optimized layout:
   ```
          Buffer 1
   ---------+---------
