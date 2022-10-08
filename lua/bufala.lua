@@ -1,21 +1,21 @@
--- Bufala is a Neovim plugin designed to make buffers more ergonomic.
+-- Bufala is a Neovim plugin designed to make buffer windows more ergonomic.
 -- Bufala wraps many of the more arcane <C-w> commands in functions
 -- that, if nothing else, suit the author's use-case. Bufala is a
--- refinement of the buffer management in dbm.nvim, itself inspired
--- by tiling window managers.
+-- refinement of the buffer window management in dbm.nvim, itself inspired
+-- by tiling window managers like suckless' dwm.
 
 M = {}
 M.state = {}
 M.state.layout = nil -- implemented layouts are stack, row, spiral, and dwindle.
 M.state.last_split = nil
 
--- Go to the next buffer on screen in order of creation
+-- Go to the next buffer window on screen in order of creation
 M.cycle = function(count)
   if count == nil then count = '' end
   return vim.cmd(count .. ' wincmd w')
 end
 
--- Swap the current buffer with the first / main buffer
+-- Swap the current buffer window with the first / main buffer window
 M.focus = function()
   local a_buffer_number = vim.fn.bufnr()
 
