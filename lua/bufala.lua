@@ -85,6 +85,9 @@ M.split = function(direction, name)
     return splitDown()
   end
 
+  -- TODO: figure out how to correctly find "last created split" instead
+  -- of `windo $`, therfore enabling spiral and dwindle layouts.
+
   if direction == 'up'    then return splitUp()    end
   if direction == 'down'  then return splitUp()    end
   if direction == 'left'  then return splitLeft()  end
@@ -149,3 +152,4 @@ M.setup = function(opts)
 end
 
 return M
+
