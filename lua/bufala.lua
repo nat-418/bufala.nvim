@@ -89,7 +89,7 @@ M.split = function(direction, name)
   -- of `windo $`, therfore enabling spiral and dwindle layouts.
 
   if direction == 'up'    then return splitUp()    end
-  if direction == 'down'  then return splitUp()    end
+  if direction == 'down'  then return splitDown()  end
   if direction == 'left'  then return splitLeft()  end
   if direction == 'right' then return splitRight() end
 
