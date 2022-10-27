@@ -1,7 +1,5 @@
-bufala.nvim
-===========
-
-![Some tasty bufala](./bufala.jpg)
+bufala.nvim 🧀
+==============
 
 Bufala is a simple Neovim plugin that makes working with buffer windows easier.
 It pulls out the "tiling window manager for buffer windows" concept from my 
