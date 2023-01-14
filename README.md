@@ -22,20 +22,19 @@ There are a few subcommands:
 Installation
 ------------
 
-Using [Packer](https://github.com/wbthomason/packer.nvim):
-```lua
-use({
-  'https://github.com/nat-418/bufala.nvim',
-  config = function()
-    require('bufala').setup({
-      layout = 'stack' -- optional, valid values are 'stack' and 'row'
-    })
-  end
-})
+```sh
+$ git clone --depth 1 https://github.com/nat-418/bufala.nvim ~/.local/share/nvim/site/pack/bufala/start/bufala.nvim
 ```
 
 Configuration
 -------------
+
+```lua
+-- ~/.config/nvim/init.lua
+require('bufala').setup({
+  layout = 'stack' -- optional, valid values are 'stack' and 'row'
+})`
+```
 
 Bufala allows for the optional configuration of a default layout for windows
 and splits in the `setup` function. These layouts are clones from suckless'
